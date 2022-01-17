@@ -23,10 +23,6 @@
 ### Installation
 Pokemon_api is was med with __Python 3.7+__. You can download the latest version of Python [here](https://www.python.org/downloads/)
 
-__Windows__
-```
-py -m pip install -
-```
 
 ### Issuetracker
 So far none.
@@ -37,15 +33,13 @@ The code is divided into differernt files for eaiser understandability. All the 
 
 
 ### API
+dokumentationen för vad alla funktioner göra 
 
 
 ### Contribution
 
 
 ### Contributors
-- 
-
-### 
 
 
 
