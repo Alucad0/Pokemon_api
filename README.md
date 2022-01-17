@@ -4,9 +4,8 @@
 - Destription of the project
 
 
-### Descrption of the projrect
+### Descrption of the project
 
-It uses snake_case and the comments are to describe the lines under the comments
 
 
 ### Issuetracker
@@ -16,6 +15,7 @@ It uses snake_case and the comments are to describe the lines under the comments
     - Programmeringspraxis
 
 ### Code conventions
+It uses snake_case and the comments are to describe the lines under the comments
 
 
 ### Contribution
@@ -31,5 +31,5 @@ It uses snake_case and the comments are to describe the lines under the comments
 ### Contact
 - Discord: Alucado#3986
 - E-mail: fredrik.magnevill@gmail.com
-- Phonenumber: 0733734005
+- Phonenumber: +46 073 373 40 05
   - if you want you can use swish to pay me. 
