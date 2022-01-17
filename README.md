@@ -37,10 +37,11 @@ dokumentationen för vad alla funktioner göra
 
 
 ### Contribution
+Feel free to contribute to this code. 
 
 
 ### Contributors
-
+- 
 
 
 ### Contact
