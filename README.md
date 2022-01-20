@@ -11,6 +11,9 @@
 - Example/Test run
 - Contribution
 - Contributors
+- Citing
+- Contact
+- Changelog
 
 ### Descrption of the project
 
@@ -19,13 +22,15 @@ The user is going to be guessing "who is that pokemon?" and successively get mor
 
 ### Requirements
 
-You are going to need to use the random and requests modules.
+- Python.
+- request module.
+- random module.
 
 ### Installation
 
 Pokemon_api is was made with __Python 3.7+__. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
-The two modules (random & requests) can you install by opening your command prompt and changing the directory to where Python is installd and into the scripts folder. There use the 'pip' to install the required module (pip install “module name”)
+The two packages (random & requests) can be install your IDE (Intergrated Developer Enviroment). Note that each IDE has a different way to install packages. Otherwise you can use the your command prompt and changing the directory to where Python is installd and into the scripts folder. There type `pip install requests` and `pip install random`
 
 ### Issuetracker
 
@@ -34,7 +39,11 @@ The two modules (random & requests) can you install by opening your command prom
 
 ### Code conventions
 
-The code is divided into differernt files for eaiser understandability. All the files use __snake_case__ as the naming convention. The end-of-line comments are to describe the lines of code that are followed by the comments. The same principle applies to the block comments.
+**File organisation:** The code is divided into different files, by order of functions, for easier interaction and to facilitate contributions.
+
+**Naming convention:** All the files use **snake_case** for variable names.
+
+**Comments:** One-line comments are written above the code line to explain its purpose. The same principle applies to the block comments.
 
 ### API
 
@@ -53,6 +62,8 @@ Feel free to contribute to this code.
 - BartoszWesolowski01
 - Bern4rdR
 
+### Citing
+
 ### Contact
 
 - Author: Fredrik M (Alucad0)
@@ -60,3 +71,5 @@ Feel free to contribute to this code.
   - E-mail: fredrik.magnevill@gmail.com
   - Phonenumber: +46 073 373 40 05
     - If you want you can use swish to pay me.
+
+### Changelog
