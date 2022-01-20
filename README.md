@@ -34,7 +34,7 @@ The two modules (random & requests) can you install by opening your command prom
 
 ### Code conventions
 
-The code is divided into differernt files for eaiser understandability. All the files use __snake_case__. The end-of-line comments are to describe the lines of code that are followed by the comments. The same principle applies to the block comments.
+The code is divided into differernt files for eaiser understandability. All the files use __snake_case__ as the naming convention. The end-of-line comments are to describe the lines of code that are followed by the comments. The same principle applies to the block comments.
 
 ### API
 
