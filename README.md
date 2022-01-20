@@ -59,7 +59,7 @@ Feel free to contribute to this code.
 
 ### Contributors
 
-- BartoszWesolowski01
+- NurarihyonMaou
 - Bern4rdR
 
 ### Citing
