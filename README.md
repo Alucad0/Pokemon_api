@@ -43,7 +43,7 @@ The two packages (random & requests) can be install your IDE (Intergrated Develo
 
 **Naming convention:** All the files use **snake_case** for variable names.
 
-**Comments:** One-line comments are written above the code line to explain its purpose. The same principle applies to the block comments.
+**Comments:** One-line comments are written above the code line to explain the code and its purpose. The same principle applies to block comments.
 
 ### API
 
