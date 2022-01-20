@@ -1,8 +1,5 @@
 # Pokemon_api
 
-things to include:
-Ett kort exempel, typ en testkörning eller tutorial.
-
 ## Table of contents
 
 - Destription of the project
