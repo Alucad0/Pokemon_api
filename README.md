@@ -8,7 +8,7 @@
 - Issuetracker
 - Code conventions
 - API
-- Example/Testrun
+- Example/Test run
 - Contribution
 - Contributors
 
