@@ -23,7 +23,7 @@ You are going to need to use the random and requests modules.
 
 ### Installation
 
-Pokemon_api is was med with __Python 3.7+__. You can download the latest version of Python [here](https://www.python.org/downloads/).
+Pokemon_api is was made with __Python 3.7+__. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
 The two modules (random & requests) can you install by opening your command prompt and changing the directory to where Python is installd and into the scripts folder. There use the 'pip' to install the required module (pip install “module name”)
 
