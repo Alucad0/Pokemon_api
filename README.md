@@ -51,6 +51,7 @@ Feel free to contribute to this code.
 ### Contributors
 
 - BartoszWesolowski01
+- Bern4rdR
 
 ### Contact
 
