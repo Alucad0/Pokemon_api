@@ -1,23 +1,28 @@
 import requests
 import random
 
+from pokemon_class import Pokemon
+
 # creates a random pokémon based on rng
-pokemon_number = random.randint(1, 898)
+mon_numb = random.randint(1, 898)
 # opens the api url for the randomly created pokémon
-link = str("https://pokeapi.co/api/v2/pokemon/{}/").format(pokemon_number)
+link = str("https://pokeapi.co/api/v2/pokemon/{}/").format(mon_numb)
 response = requests.get(link)
 response = response.json()
-type = response['types'][0]['type']['name']
-name = response['name']
-abilities = []
-hAbilities = []
+mon_type = []
+mon_type.append(response['types'][0]['type']['name'])
+# needs to add if it got a second type, like butterfly got bug and flying. 
+mon_name = response['name']
+abi = []
+hid_abi = []
 
 # goes through all the abilities that the pokémon have
 for ability in response['abilities']:
     if ability['is_hidden'] == True:
-        hAbilities.append(ability['ability']['name'])
+        hid_abi.append(ability['ability']['name'])
     else:
-        abilities.append(ability['ability']['name'])
+        abi.append(ability['ability']['name'])
 
 
-print (abilities, hAbilities)
+print(mon_type)
+mon = Pokemon(mon_name, mon_numb, mon_type, abi, hid_abi)
