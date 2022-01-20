@@ -18,7 +18,7 @@
 ### Descrption of the project
 
 This project is going to be a fully automated pokemon guessing game. 
-The user is going to be guessing "who is that pokemon?" and successively get more and more clues with each incorect guess until there are no more clues to be given. 
+The user is going to be guessing "who is that pokemon?" and successively get more and more clues with each incorect guess until there are no more clues to be given. Thereupon the user will have ten remaining guesses.
 
 ### Requirements
 
