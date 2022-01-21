@@ -32,6 +32,7 @@ mon = Pokemon(mon_name, mon_numb, mon_type, abi, hid_abi)
 
 """
 It will start with spaces for the name as well as the abilities (all of them)
+    maybe I will remove the hidden ability since it will fuck with the window
 bad drawing of how the popup window will look
  _______________________________________________________
 |                                                       |
@@ -48,17 +49,18 @@ bad drawing of how the popup window will look
 |            ______________________________             |
 |                                                       |
 |                                                       |
-|     Typing:                          Rarity:          |
+|     Typing:                     Generation:           |
 |                                                       |
-|     Ability:                                          |
+|                                                       |
+|     Ability:                    Rarity:               |
 |                                                       |
 |                                                       |
 |                Guess:                                 |
 |                                                       |
 |     Guesses:                                          |
-|                                                       |
-|                                                       |
-|                                                       |
+|         - input1                                      |
+|         - input2                                      |
+|         - input3                                      |
 |                                                       |
 |                                                       |
 |                                                       |
