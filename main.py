@@ -31,7 +31,10 @@ print(mon_type)
 mon = Pokemon(mon_name, mon_numb, mon_type, abi, hid_abi)
 
 """
-It will start with spaces for the name as well as the abilities (all of them)
+create a pop up window
+after all the clues are reveled the user will have 3 remaining guesses.
+
+It will start with spaces for the name (no letters) as well as the abilities (all of them)
     maybe I will remove the hidden ability since it will fuck with the window
 bad drawing of how the popup window will look
  _______________________________________________________
