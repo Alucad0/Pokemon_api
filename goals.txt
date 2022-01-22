@@ -1,0 +1,42 @@
+
+things to do:
+create a pop up window
+after all the clues are reveled the user will have 3 remaining guesses.
+
+The given clues will be the spaces for the name (no letters - just the amount) as well as the abilities (all of them)
+    maybe I will remove the hidden ability since it will fuck with the window and it wont help
+    
+bad drawing of how the popup window will look:
+ _______________________________________________________
+|                                                       |
+|    # XXX     __  __  __  __  __  __  __               | spaces for the name (auto generated based on the name)
+|                                                       | with the index number to the left of it
+|            ______________________________             | 
+|           |                              |            | 
+|           |                              |            |
+|           |                              |            |
+|           |                              |            | place for the dark siluette of the sprite 
+|           |                              |            |
+|           |                              |            |
+|           |                              |            |
+|            ______________________________             |
+|                                                       |
+|                                                       |
+|     Typing:                     Generation:           |
+|                                                       |
+|                                                       |
+|     Ability:                    Rarity:               |
+|                                                       |
+|                                                       |
+|                Guess:  new_input                      |
+|                                                       |
+|     Guesses:                                          |
+|         - input1                                      |
+|         - input2                                      |
+|         - input3                                      |
+|                                                       |
+|                                                       |
+|                                                       |
+
+    
+
