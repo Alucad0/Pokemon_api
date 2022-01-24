@@ -1,7 +1,6 @@
 import requests
 import random
-
-from pokemon_class import Pokemon
+from pokemon_class import *
 
 # creates a random pokémon based on rng
 mon_numb = random.randint(1, 898)
@@ -10,30 +9,39 @@ link = str("https://pokeapi.co/api/v2/pokemon/{}/").format(mon_numb)
 response = requests.get(link)
 response = response.json()
 
-mon_type = []
-mon_type.append(response['types'][0]['type']['name'])
-# needs to add if it got a second type, like butterfly got bug and flying. Does it already do that?
-
-# generation number - can be brute forced
-
-# png or gif of the sprite 
-# example of the link from the api that I wanna get
-    # https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/female/267.gif
-
-# rarity value 
-
+# variables:
+mon_numb = mon_numb
 mon_name = response['name']
-# only wanna have the primary ability
+sprite = response['sprites']['front_default']
+mon_type = []
 abi = []
-hid_abi = []
+gen = int
+
+# goes throgh all of the typings the pokemon has and adds them to the list
+for type in response['types']:
+    mon_type.append(type['type']['name'])
 
 # goes through all the abilities that the pokémon have
 for ability in response['abilities']:
-    if ability['is_hidden'] == True:
-        hid_abi.append(ability['ability']['name'])
-    else:
-        abi.append(ability['ability']['name'])
+    abi.append(ability['ability']['name'])
+
+# hardcoded a bruteforce for the generation
+if mon_numb<152:
+    gen = 1
+elif mon_numb>151 and mon_numb<252:
+    gen = 2
+elif mon_numb>251 and mon_numb<387:
+    gen = 3
+elif mon_numb>386 and mon_numb<494:
+    gen = 4
+elif mon_numb>493 and mon_numb<650:
+    gen = 5
+elif mon_numb>649 and mon_numb<722:
+    gen = 6
+elif mon_numb>721 and mon_numb<810:
+    gen = 7
+elif mon_numb>809 and mon_numb<899:
+    gen = 8
 
 
-print(mon_type)
-mon = Pokemon(mon_name, mon_numb, mon_type, abi, hid_abi)
+mon = Pokemon(mon_name, mon_numb, mon_type, abi, gen, sprite)
