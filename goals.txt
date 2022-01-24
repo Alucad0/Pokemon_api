@@ -1,7 +1,7 @@
 first create an ez version:
 
 Clues order:
-amount of letters + ability + generation, typing + rarity, index + first letter, dark siluette of the sprite, sprite from trainer POV in colour
+amount of letters + ability + generation, typing, index + first letter, dark siluette of the sprite, sprite from trainer POV in colour
 if the guess is incorrect after the coloured sprite then they lose. 
 
 
@@ -22,7 +22,7 @@ things to do:
 create a pop up window
 
 order of the clues:
-amount of letters, rarity, generation, ability, typing, index, first letter, dark siluette sprite (gif - if possible)
+amount of letters, generation, ability, typing, index, first letter, dark siluette sprite (gif - if possible)
     
     
 bad drawing of how the popup window will look:
