@@ -17,11 +17,11 @@ mon_type = []
 abi = []
 gen = int
 
-# goes throgh all of the typings the pokemon has and adds them to the list
+# goes throgh all of the typings the pokémon has and adds them to the list
 for type in response['types']:
     mon_type.append(type['type']['name'])
 
-# goes through all the abilities that the pokémon have
+# goes through all of the abilities that the pokémon could have and adds them to the list
 for ability in response['abilities']:
     abi.append(ability['ability']['name'])
 
