@@ -64,6 +64,8 @@ Feel free to contribute to this code.
 
 ### Citing
 
+work in progress
+
 ### Contact
 
 - Author: Fredrik M (Alucad0)
@@ -73,3 +75,5 @@ Feel free to contribute to this code.
     - If you want you can use swish to pay me.
 
 ### Changelog
+
+work in progress
