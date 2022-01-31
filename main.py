@@ -45,3 +45,47 @@ elif mon_numb>809 and mon_numb<899:
 
 
 mon = Pokemon(mon_name, mon_numb, mon_type, abi, gen, sprite)
+
+
+def game():
+    round = 1
+    playing = True
+    print('This is "Guess that Pokémon!"\n')
+    prev_guess = []
+    while playing:
+        print("Round {}".format(round))
+        if round >= 1:
+            format_name = "_ " # * len(ret_name)
+            print("Name: {}").format(format_name)
+            print("Generation: {]").format() # ret_gen
+            print("Ability: {}").format() # ret_ability
+        
+        if round >= 2:
+            # format_name = index 0 + "- " * len(ret_name - 1)
+            print("Type: {}").format() # ret_type
+            print("Index: {}").format() # ret_index
+
+        if round >= 3:
+            pass
+
+
+        guess = str(input("Who's that Pokemon:  "))
+        prev_guess.append(guess)
+
+        if guess == 
+
+        if round == 6:
+            print("You lost")
+            cont = str(input("Do you wish to continue playing:  "))
+            if cont in ["yes", "yeas", "y", "ye", "continue", "c", "cont"]:
+                game()
+
+        round += 1
+
+
+
+
+play = str(input("Do you wanna play:    "))
+
+if play in ["yes", "yeas", "y", "ye"]:
+    game()
