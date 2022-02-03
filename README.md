@@ -17,8 +17,7 @@
 
 ### Descrption of the project
 
-This project is going to be a fully automated pokemon guessing game. 
-The user is going to be guessing "who is that pokemon?" and successively get more and more clues with each incorect guess until there are no more clues to be given. Thereupon the user will have ten remaining guesses.
+This project is going to be a fully automated pokemon guessing game. The program will start by asking the user if they wanna play (input = str yes or no). If the answer is yes, that they wanna play, then the first round will begin with round (round = 1).The user is going to be guessing "who is that pokemon?" (while they wanna play) and successively get more and more clues with each incorect guess until there are no more clues to be given (counting up with each loop and clues will be given depending on the counter). Thereupon, after all the clues have been shown, the user will have 2 remaining guesses (if count = x then game over). After the user has either guess wrong or incorrectly too many times the round will end and it will ask the user wether they wanna continue playing or quit (input = quit or play). If the user decides to continue playing then the round counter will increase (round += 1). 
 
 ### Requirements
 
@@ -79,7 +78,7 @@ work in progress
 
 ### Changelog
 
-work in progress
+This changelog will only updated after major changes and it will begin with the complete version of this project.
 
 ## License
 
