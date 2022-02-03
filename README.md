@@ -55,12 +55,15 @@ text
 
 ### Contribution
 
-Feel free to contribute to this code.
+This is a school project and it will get an failing grade if anyone contributes majorly, so any pull requests will be denied after it has been graded. 
+
+Feel free to contribute to this code after the grade has been set (after 27/2 - 2022). For major changes, please open an issue first to discuss what you would like to change. Please make a comment about what is changing. 
 
 ### Contributors
 
 - NurarihyonMaou
 - Bern4rdR
+- nilund93
 
 ### Citing
 
@@ -77,3 +80,7 @@ work in progress
 ### Changelog
 
 work in progress
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
