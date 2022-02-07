@@ -42,6 +42,7 @@ def game():
 
 
     mon = Pokemon(mon_name, mon_numb, mon_type, abi, gen, sprite)
+    format_name = "_ " * len(mon.ret_name())
 
     # starting the looping terminal game
     while playing:
@@ -50,13 +51,12 @@ def game():
         # each round represents a set of clues and the clues will add up and change with each incorecct guess
         # the clues will be re-printed for each round with more clues depending on the round.
         if round >= 1:
-            format_name = "_ " * len(mon.ret_name())
             print(f"Name: {format_name}")
             print(f"Generation: {mon.ret_gen()}") 
-            print(f"Ability: {mon.ret_ability()}") 
+            print(f"Ability: {mon.ret_ability()}")
+            format_name = mon.ret_name()[0] + " -" * (len(mon.ret_name()) - 1) 
         
         if round >= 2:
-            format_name = mon.ret_name()[0] + " -" * (len(mon.ret_name()) - 1)
             print(f"Type: {mon.ret_type()}") 
             print(f"Index: {mon.ret_numb()}")
             print(f"Previous guesses: {prev_guess}")
