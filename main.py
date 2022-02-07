@@ -6,7 +6,7 @@ def game():
     # creates a random pokémon based on rng
     mon_numb = random.randint(1, 898)
     # opens the api url for the randomly created pokémon
-    link = str("https://pokeapi.co/api/v2/pokemon/{}/").format(mon_numb)
+    link = str(f"https://pokeapi.co/api/v2/pokemon/{mon_numb}/")
     response = requests.get(link)
     response = response.json()
 
@@ -45,33 +45,38 @@ def game():
     # starting the looping terminal game
     print('This is "Guess that Pokémon!"\n')
     while playing:
-        print("Round {}".format(round))
+        print(f"Round {round}")
         
         # the clues will be re-printed for each round with more clues depending on the round.
         if round >= 1:
             format_name = "_ " # * len(ret_name)
-            print("Name: {}").format(format_name)
-            print("Generation: {]").format() # ret_gen
-            print("Ability: {}").format() # ret_ability
+            print(f"Name: {format_name}")
+            print(f"Generation: {}") # mon.ret_gen()
+            print(f"Ability: {}") # mon.ret_ability()
         
         if round >= 2:
-            # format_name = index 0 + "- " * len(ret_name - 1)
-            print("Type: {}").format() # ret_type
-            print("Index: {}").format() # ret_index
+            # format_name = mon.ret_name()[0] + " -" * len(ret_name - 1)
+            print(f"Type: {}") # mon.ret_type()
+            print(f"Index: {}") # mon.ret_index()
 
         if round >= 3:
+            # sprite
             pass
 
 
         guess = str(input("Who's that Pokemon:  "))
         prev_guess.append(guess.lower())
 
-        if guess.lower() == #ret_name.lower()
+        if guess.lower() == #mon.ret_name.lower():
+            print(f"Thats right, the pokémon was {}") #mon.ret_name()
+            cont = str(input("Do you wish to continue playing:  "))
+            if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
+                game()        
 
-        if round == 6:
+        if round == 5:
             print("You lost")
             cont = str(input("Do you wish to continue playing:  "))
-            if cont in ["yes", "yeas", "y", "ye", "continue", "c", "cont"]:
+            if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()
 
         round += 1
