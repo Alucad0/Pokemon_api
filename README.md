@@ -36,15 +36,14 @@ If the user decides to continue playing then the round counter will increase (ro
 
 Pokemon_api is was made with __Python 3.7+__. You can download the latest version of Python [here](https://www.python.org/downloads/).
 
-The two packages (random & requests) can be install your IDE (Intergrated Developer Enviroment). 
+The three packages (random, requests & webbrowser) can be install your IDE (Intergrated Developer Enviroment). 
 Note that each IDE has a different way to install packages. 
 Otherwise you can use the your command prompt and changing the directory to where Python is installd and into the scripts folder. 
-There type `pip install requests` and `pip install random`
+There type `pip install requests`, `pip install random` and `pip install webbrowser`
 
-### Issuetracker
+### Issuetracker/Opportunities for improvement
 
-- Everything so far.
-- Programming is hard.
+The current program does not have graphical interface which would have been prefered. Instead it uses the webbrowser packages to show the sprite of the pokemon. This is something that is currently being developed.
 
 ### Code conventions
 
@@ -60,7 +59,42 @@ dokumentationen för vad alla funktioner göra, ifall de returnerar något vad �
 
 ### Example/Testrun
 
-text
+```powershell
+This is "Guess that Pokémon!"
+
+
+Round 1
+Name: _ _ _ _ _ _ _ _ _      
+Generation: 7
+Ability: ['swarm', 'rivalry']
+
+Who is that Pokemon:  pikachu
+
+
+Round 2
+Name: _ _ _ _ _ _ _ _ _ 
+Generation: 7
+Ability: ['swarm', 'rivalry']
+Type: ['bug', 'flying']
+Index: 755
+Previous guesses: ['pikachu']
+
+Who's that Pokemon:  beedrill
+
+
+Round 3
+Name: _ _ _ _ _ _ _ _ _
+Generation: 7
+Ability: ['swarm', 'rivalry']
+Type: ['bug', 'flying']
+Index: 755
+Previous guesses: ['pikachu', 'beedrill']
+
+Who is that Pokemon:  Beautifly 
+That is right, the pokémon was beautifly
+Do you wish to continue playing:  no
+
+```
 
 ### Contribution
 
