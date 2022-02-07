@@ -1,5 +1,6 @@
 import requests
 import random
+import webbrowser
 from pokemon_class import *
 
 def game():
@@ -43,48 +44,54 @@ def game():
     mon = Pokemon(mon_name, mon_numb, mon_type, abi, gen, sprite)
 
     # starting the looping terminal game
-    print('This is "Guess that Pokémon!"\n')
     while playing:
-        print(f"Round {round}")
-        
+        print(f"\n\nRound {round}")
+
+        # each round represents a set of clues and the clues will add up and change with each incorecct guess
         # the clues will be re-printed for each round with more clues depending on the round.
         if round >= 1:
-            format_name = "_ " # * len(ret_name)
+            format_name = "_ " * len(mon.ret_name())
             print(f"Name: {format_name}")
-            print(f"Generation: {}") # mon.ret_gen()
-            print(f"Ability: {}") # mon.ret_ability()
+            print(f"Generation: {mon.ret_gen()}") 
+            print(f"Ability: {mon.ret_ability()}") 
         
         if round >= 2:
-            # format_name = mon.ret_name()[0] + " -" * len(ret_name - 1)
-            print(f"Type: {}") # mon.ret_type()
-            print(f"Index: {}") # mon.ret_index()
+            format_name = mon.ret_name()[0] + " -" * (len(mon.ret_name()) - 1)
+            print(f"Type: {mon.ret_type()}") 
+            print(f"Index: {mon.ret_numb()}")
+            print(f"Previous guesses: {prev_guess}")
 
         if round >= 3:
-            # sprite
-            pass
+            chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
+            webbrowser.get(chrome_path).open(mon.ret_sprite())
+        
 
+        guess = str(input("\nWho's that Pokemon:  ")).lower()
+        prev_guess.append(guess)
 
-        guess = str(input("Who's that Pokemon:  "))
-        prev_guess.append(guess.lower())
-
-        if guess.lower() == #mon.ret_name.lower():
-            print(f"Thats right, the pokémon was {}") #mon.ret_name()
+        if guess == mon.ret_name():
+            print(f"Thats right, the pokémon was {mon.ret_name()}") 
             cont = str(input("Do you wish to continue playing:  "))
             if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()        
+            else:
+                break
 
         if round == 5:
-            print("You lost")
+            print(f"You lost. The pokémon was {mon.ret_name()}")
             cont = str(input("Do you wish to continue playing:  "))
             if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()
-
+            else:
+                break
         round += 1
-
-
 
 
 play = str(input("Do you wanna play:    "))
 
 if play in ["yes", "yeas", "y", "ye"]:
+    print('This is "Guess that Pokémon!"')
     game()
+
+else: 
+    print("Okey, then go fuck yourself - why did you even start the program?")
