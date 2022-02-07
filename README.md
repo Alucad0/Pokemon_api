@@ -72,7 +72,7 @@ Who is that Pokemon:  pikachu
 
 
 Round 2
-Name: _ _ _ _ _ _ _ _ _ 
+Name: B _ _ _ _ _ _ _ _ 
 Generation: 7
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
@@ -83,7 +83,7 @@ Who's that Pokemon:  beedrill
 
 
 Round 3
-Name: _ _ _ _ _ _ _ _ _
+Name: B _ _ _ _ _ _ _ _
 Generation: 7
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
