@@ -55,6 +55,8 @@ The current program does not have graphical interface which would have been pref
 
 ### API
 
+![UML diagram](https://github.com/Alucad0/test/blob/main/Pok%C3%A9mon_UML.jpg?raw=true)
+
 dokumentationen för vad alla funktioner göra, ifall de returnerar något vad är det som de returenar.
 
 ### Example/Testrun
