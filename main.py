@@ -72,7 +72,7 @@ def game():
         if guess == mon.ret_name():
             print(f"Thats right, the pokémon was {mon.ret_name()}") 
             cont = str(input("Do you wish to continue playing:  "))
-            if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
+            if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()        
             else:
                 break
@@ -80,7 +80,7 @@ def game():
         if round == 5:
             print(f"You lost. The pokémon was {mon.ret_name()}")
             cont = str(input("Do you wish to continue playing:  "))
-            if cont in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
+            if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()
             else:
                 break
@@ -89,7 +89,7 @@ def game():
 
 play = str(input("Do you wanna play:    "))
 
-if play in ["yes", "yeas", "y", "ye"]:
+if play.lower() in ["yes", "yeas", "y", "ye"]:
     print('This is "Guess that Pokémon!"')
     game()
 
