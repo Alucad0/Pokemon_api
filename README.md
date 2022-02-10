@@ -55,9 +55,9 @@ The current program does not have graphical interface which would have been pref
 
 ### API
 
-![UML diagram](https://drive.google.com/file/d/1XECBWm4AuNqw-oCKezLN-L-m7s4Qwimu/view?usp=sharing)
+![UML diagram](https://github.com/Alucad0/Pokemon_api/blob/main/Pok%C3%A9mon_UML.drawio.png?raw=true)
 
-dokumentationen för vad alla funktioner göra, ifall de returnerar något vad är det som de returenar.
+All of the methods return a specific variable. 
 
 ### Example/Testrun
 
