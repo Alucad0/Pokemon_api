@@ -55,7 +55,7 @@ The current program does not have graphical interface which would have been pref
 
 ### API
 
-![UML diagram](https://github.com/Alucad0/test/blob/main/Pok%C3%A9mon_UML.jpg?raw=true)
+![UML diagram](https://drive.google.com/file/d/1XECBWm4AuNqw-oCKezLN-L-m7s4Qwimu/view?usp=sharing)
 
 dokumentationen för vad alla funktioner göra, ifall de returnerar något vad är det som de returenar.
 
@@ -78,7 +78,7 @@ Name: B _ _ _ _ _ _ _ _
 Generation: 7
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
-Index: 755
+Index: 267
 Previous guesses: ['pikachu']
 
 Who's that Pokemon:  beedrill
@@ -89,7 +89,7 @@ Name: B _ _ _ _ _ _ _ _
 Generation: 7
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
-Index: 755
+Index: 267
 Previous guesses: ['pikachu', 'beedrill']
 
 Who is that Pokemon:  Beautifly 
