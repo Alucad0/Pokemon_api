@@ -11,7 +11,6 @@
 - Example/Test run
 - Contribution
 - Contributors
-- Citing
 - Contact
 - Changelog
 
@@ -111,10 +110,6 @@ Please make a comment about what is changing.
 - NurarihyonMaou
 - Bern4rdR
 - nilund93
-
-### Citing
-
-work in progress
 
 ### Contact
 
