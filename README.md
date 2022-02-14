@@ -107,9 +107,9 @@ Please make a comment about what is changing.
 
 ### Contributors
 
-- NurarihyonMaou
-- Bern4rdR
-- nilund93
+- [NurarihyonMaou](https://github.com/NurarihyonMaou)
+- [Bern4rdR](https://github.com/Bern4rdR)
+- [nilund93](https://github.com/Nilund93)
 
 ### Contact
 
