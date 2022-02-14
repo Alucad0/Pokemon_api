@@ -54,14 +54,14 @@ def game():
             print(f"Name: {format_name}")
             print(f"Generation: {mon.ret_gen()}") 
             print(f"Ability: {mon.ret_ability()}")
-            format_name = mon.ret_name()[0] + " -" * (len(mon.ret_name()) - 1) 
+            format_name = mon.ret_name()[0].capitalize() + " -" * (len(mon.ret_name()) - 1) 
         
         if round >= 2:
             print(f"Type: {mon.ret_type()}") 
             print(f"Index: {mon.ret_numb()}")
             print(f"Previous guesses: {prev_guess}")
 
-        if round >= 3:
+        if round == 3:
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
             webbrowser.get(chrome_path).open(mon.ret_sprite())
         
@@ -70,7 +70,7 @@ def game():
         prev_guess.append(guess)
 
         if guess == mon.ret_name():
-            print(f"Thats right, the pokémon was {mon.ret_name()}") 
+            print(f"Thats right, the pokémon was {mon.ret_name().capitalize()}") 
             cont = str(input("Do you wish to continue playing:  "))
             if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()        
@@ -78,7 +78,7 @@ def game():
                 break
 
         if round == 5:
-            print(f"You lost. The pokémon was {mon.ret_name()}")
+            print(f"You lost. The pokémon was {mon.ret_name().capitalize()}")
             cont = str(input("Do you wish to continue playing:  "))
             if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()
