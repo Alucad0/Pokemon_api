@@ -14,10 +14,12 @@ class Pokemon():
         return self.numb
 
     def ret_type(self):
-        return self.type
+        ret_string = self.type.replace("  ", ", ")
+        return ret_string
 
     def ret_ability(self):
-        return self.ability
+        ret_string = self.ability.replace("  ", ", ")
+        return ret_string
 
     def ret_gen(self):
         return self.gen
