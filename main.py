@@ -14,21 +14,22 @@ def game():
     # variables:
     round = 1
     playing = True
-    prev_guess = []
+    prev_guess = str()
     mon_numb = mon_numb
     mon_name = response['name']
     sprite = response['sprites']['front_default']
-    mon_type = []
-    abi = []
+    mon_type = str()
+    abi = str()
     gen = int
 
-    # goes throgh all of the typings the pokémon has and adds them to the list
+    # goes throgh all of the typings the pokémon has and adds them to the string
     for type in response['types']:
-        mon_type.append(type['type']['name'])
+       mon_type += f" {type['type']['name']} "
 
-    # goes through all of the abilities that the pokémon could have and adds them to the list
+    # goes through all of the abilities that the pokémon could have and adds them to a string
     for ability in response['abilities']:
-        abi.append(ability['ability']['name'])
+        abi += f" {ability['ability']['name']} "
+    
 
     # hardcoded a bruteforce for the generation
     if mon_numb<152: gen = 1
@@ -59,7 +60,7 @@ def game():
         if round >= 2:
             print(f"Type: {mon.ret_type()}") 
             print(f"Index: {mon.ret_numb()}")
-            print(f"Previous guesses: {prev_guess}")
+            print(f"Previous guesses:{prev_guess}")
 
         if round == 3:
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
@@ -67,7 +68,9 @@ def game():
         
 
         guess = str(input("\nWho's that Pokemon:  ")).lower()
-        prev_guess.append(guess)
+        prev_guess += f" {guess}."
+        if round > 1:
+            prev_guess = prev_guess[:-1].replace(".", ",") + "."
 
         if guess == mon.ret_name():
             print(f"Thats right, the pokémon was {mon.ret_name().capitalize()}") 
