@@ -54,7 +54,7 @@ The current program does not have graphical interface which would have been pref
 
 ### API
 
-![Pokémon_UML drawio](https://user-images.githubusercontent.com/96413210/154013332-48de409a-54ae-4139-9fb3-5d4a93bc90a4.png)
+![Pokémon_UML drawio (1)](https://user-images.githubusercontent.com/96413210/154050589-eab9e130-c8b2-4807-909c-2dabcf3277f5.png)
 
 All of the methods return a specific variable. 
 
