@@ -66,7 +66,7 @@ This is "Guess that Pokémon!"
 
 Round 1
 Name: _ _ _ _ _ _ _ _ _      
-Generation: 7
+Generation: 3
 Ability: ['swarm', 'rivalry']
 
 Who is that Pokemon:  pikachu
@@ -74,7 +74,7 @@ Who is that Pokemon:  pikachu
 
 Round 2
 Name: B _ _ _ _ _ _ _ _ 
-Generation: 7
+Generation: 3
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
 Index: 267
@@ -85,7 +85,7 @@ Who's that Pokemon:  beedrill
 
 Round 3
 Name: B _ _ _ _ _ _ _ _
-Generation: 7
+Generation: 3
 Ability: ['swarm', 'rivalry']
 Type: ['bug', 'flying']
 Index: 267
