@@ -37,8 +37,7 @@ Pokemon_api is was made with __Python 3.7+__. You can download the latest versio
 
 The three packages (random, requests & webbrowser) can be install your IDE (Intergrated Developer Enviroment). 
 Note that each IDE has a different way to install packages. 
-Otherwise you can use the your command prompt and changing the directory to where Python is installd and into the scripts folder. 
-There type `pip install requests`, `pip install random` and `pip install webbrowser`
+Otherwise you can use the your command prompt and changing the directory to where Python is installed and into the scripts folder, there type `pip install requests`, `pip install random` and `pip install webbrowser`
 
 ### Issuetracker/Opportunities for improvement
 
@@ -125,7 +124,8 @@ This project finnished 24/2, but further additions and modifications will happen
 
 ### Changelog
 
-This changelog will only updated after major changes and it will begin with the complete version of this project (after 27/2 - 2022).
+Patch 0: 24-02-2022.
+The game is fully functioning. The next patch will contain a graphics update as well as better UI with different options buttons. 
 
 ## License
 
