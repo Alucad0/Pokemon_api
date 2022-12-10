@@ -43,7 +43,7 @@ def game():
 
 
     mon = Pokemon(mon_name, mon_numb, mon_type, abi, gen, sprite)
-    format_name = "_ " * len(mon.ret_name())
+    format_name = "_ " * len(mon.get_name())
 
     # starting the looping terminal game
     while playing:
@@ -53,18 +53,18 @@ def game():
         # the clues will be re-printed for each round with more clues depending on the round.
         if round >= 1:
             print(f"Name: {format_name}")
-            print(f"Generation: {mon.ret_gen()}") 
-            print(f"Ability: {mon.ret_ability()}")
-            format_name = mon.ret_name()[0].capitalize() + " -" * (len(mon.ret_name()) - 1) 
+            print(f"Generation: {mon.get_gen()}") 
+            print(f"Ability: {mon.get_ability()}")
+            format_name = mon.get_name()[0].capitalize() + " -" * (len(mon.get_name()) - 1) 
         
         if round >= 2:
-            print(f"Type: {mon.ret_type()}") 
-            print(f"Index: {mon.ret_numb()}")
+            print(f"Type: {mon.get_type()}") 
+            print(f"Index: {mon.get_numb()}")
             print(f"Previous guesses:{prev_guess}")
 
         if round == 3:
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
-            webbrowser.get(chrome_path).open(mon.ret_sprite())
+            webbrowser.get(chrome_path).open(mon.get_sprite())
         
 
         guess = str(input("\nWho's that Pokemon:  ")).lower()
@@ -73,7 +73,7 @@ def game():
             prev_guess = prev_guess[:-1].replace(".", ",") + "."
 
         if guess == mon.ret_name():
-            print(f"Thats right, the pokémon was {mon.ret_name().capitalize()}") 
+            print(f"Thats right, the pokémon was {mon.get_name().capitalize()}") 
             cont = str(input("Do you wish to continue playing:  "))
             if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()        
@@ -81,7 +81,7 @@ def game():
                 break
 
         if round == 5:
-            print(f"You lost. The pokémon was {mon.ret_name().capitalize()}")
+            print(f"You lost. The pokémon was {mon.get_name().capitalize()}")
             cont = str(input("Do you wish to continue playing:  "))
             if cont.lower() in ["yes", "yeas", "y", "ye", "yeah", "continue", "c", "cont"]:
                 game()
