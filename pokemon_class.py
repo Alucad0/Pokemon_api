@@ -7,22 +7,22 @@ class Pokemon():
         self.gen = generation
         self.png = sprite
 
-    def ret_name(self):
+    def get_name(self):
         return self.name
 
-    def ret_numb(self):
+    def get_numb(self):
         return self.numb
 
-    def ret_type(self):
+    def get_type(self):
         ret_string = self.type.replace("  ", ", ")
         return ret_string
 
-    def ret_ability(self):
+    def get_ability(self):
         ret_string = self.ability.replace("  ", ", ")
         return ret_string
 
-    def ret_gen(self):
+    def get_gen(self):
         return self.gen
 
-    def ret_sprite(self):
+    def get_sprite(self):
         return self.png
